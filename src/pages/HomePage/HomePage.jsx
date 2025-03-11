@@ -7,10 +7,12 @@ const HomePage = () => {
           <h2 className={s.headerApp}>The Phonebook</h2>
       <p className={s.descriptionApp}>It's an application with the ability to authenticate and authorize to work with a private contact book. Now all your contacts are at hand, you can add, delete, edit a contact or use a search filter by name or phone number.</p>
       <p className={s.descriptionAppTechnology}>Written on React library with Redux for convenient manipulation of states, also used Axios with async/await method for correct requests to the backend. Swigger and Postman are used to work with the backend. The application is divided into private and public routes, so your contacts are visible only to your account.</p>
-          <h2 className={s.headerGreetingsByDev}>Hi! My name is Viktoriia!</h2>
         <div className={s.wrapperAvatarDevWithSummary}>
-              <div className={s.avatarDevContainer}><img  src="./viktoriia-kovalska-developer.JPG" alt="Viktoriia Kovalska" width={40} height={60}/></div>
-               <p className={s.summary}>I am a 25-year-old Full Stuck Developer with one year of experience. Focused on creating user-friendly and responsive applications, writing clean, efficient and easy-to-maintain code. I always strive to learn current trends and best practices.</p>
+        <img className={s.avatar} src="/viktoriia-kovalska-developer.JPG" alt="Viktoriia Kovalska" width={100} height={200} />
+        <div>
+          <h2 className={s.headerGreetingsByDev}>Hi! My name is Viktoriia!</h2>
+          <p className={s.summary}>I am a 25-year-old Full Stuck Developer with one year of experience. Focused on creating user-friendly and responsive applications, writing clean, efficient and easy-to-maintain code. I always strive to learn current trends and best practices.</p>
+        </div>
         </div>
          <h3 className={s.headerListCooperate}>Glad to cooperate:</h3>
           <ul className={s.listCooperate}>

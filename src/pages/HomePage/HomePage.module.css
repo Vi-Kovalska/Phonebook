@@ -14,20 +14,23 @@
 }
 .headerGreetingsByDev{
         font-size: 20px;
-    margin-top: 30px;
     text-align: center;
 }
 .wrapperAvatarDevWithSummary{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
 }
-.avatarDevContainer{
-    border-radius: 50%;
+.avatar{  
+    border-radius: 100%;
+    object-fit: cover;
 }
 .summary{
     color: black;
+    text-indent: 10px;
 }
 .headerListCooperate{
     margin-top: 15px;
@@ -53,4 +56,10 @@ gap: 5px;
         font-size: 24px;
         text-align: left;
     }
+        .wrapperAvatarDevWithSummary {
+            flex-direction: row;
+        }
+        .summary{
+    text-indent: 0;
+        }
 }
