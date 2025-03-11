@@ -1,0 +1,16 @@
+.wrapperAppBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+@media screen and (min-width: 768px) {
+.wrapperAppBar{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+}

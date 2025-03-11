@@ -1,0 +1,56 @@
+.pageContentWrapper{
+    padding: 10px;
+}
+.headerApp{
+    text-align: center;
+}
+.descriptionApp{
+    text-indent: 10px;
+    color: black;
+}
+.descriptionAppTechnology{
+    text-indent: 10px;
+    font-size: 14px;
+}
+.headerGreetingsByDev{
+        font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.wrapperAvatarDevWithSummary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.avatarDevContainer{
+    border-radius: 50%;
+}
+.summary{
+    color: black;
+}
+.headerListCooperate{
+    margin-top: 15px;
+}
+.listCooperate{
+    text-indent: 10px;
+}
+.itemCooperate{
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 5px;
+}
+.linkCooperate{
+    color: black;
+    &:hover, &:focus{
+        color: orange;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .headerGreetingsByDev {
+        font-size: 24px;
+        text-align: left;
+    }
+}

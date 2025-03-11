@@ -1,0 +1,20 @@
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.headerGreetingUser{
+    font-size: 12px;
+}
+.btnLogOut{
+    font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+    .headerGreetingUser{
+font-size: 24px;
+    }
+    .btnLogOut{
+        font-size: 16px;
+    }
+}

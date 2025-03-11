@@ -1,0 +1,13 @@
+.authNavWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+}
+.link {
+    color: black;
+}
+.active {
+    color: orange;
+}
