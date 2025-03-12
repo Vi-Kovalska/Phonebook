@@ -12,7 +12,7 @@ const SearchBox = () => {
   const handleChangeFilter = (name) => dispatch(changeFilter(name));
   return (
     <div className={s.wrapper}>
-    <label htmlFor={id}>Find contacts by name</label>
+    <label htmlFor={id}>Find contacts by name or number</label>
       <input id={id} type="text" name='nameContact' onChange={(e) => handleChangeFilter(e.target.value.trim())} value={filter} className={s.input} readOnly={contacts.length === 0} />
     </div>
 
