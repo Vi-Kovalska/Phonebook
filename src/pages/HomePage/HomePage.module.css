@@ -4,13 +4,14 @@
 .headerApp{
     text-align: center;
 }
-.descriptionApp{
+.descriptionApp.dark{
     text-indent: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
-.descriptionAppTechnology{
+.descriptionAppTechnology.dark{
     text-indent: 10px;
     font-size: 14px;
+    color: rgb(255, 255, 255);
 }
 .headerGreetingsByDev{
         font-size: 20px;
@@ -28,8 +29,8 @@
     border-radius: 100%;
     object-fit: cover;
 }
-.summary{
-    color: black;
+.summary.dark{
+    color: rgb(255, 255, 255);
     text-indent: 10px;
 }
 .headerListCooperate{
@@ -44,8 +45,8 @@ justify-content: start;
 align-items: center;
 gap: 5px;
 }
-.linkCooperate{
-    color: black;
+.linkCooperate.dark{
+    color: rgb(255, 255, 255);
     &:hover, &:focus{
         color: orange;
         font-size: 18px;
@@ -62,4 +63,7 @@ gap: 5px;
         .summary{
     text-indent: 0;
         }
+}
+.icon.dark{
+color: bisque;
 }

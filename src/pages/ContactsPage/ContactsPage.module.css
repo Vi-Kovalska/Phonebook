@@ -1,5 +1,6 @@
 .contentWrapper{
     min-width: 320px;
+    padding: 10px;
 }
 @media screen and (min-width: 768px) {
 .contentWrapper {

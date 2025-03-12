@@ -1,6 +1,19 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: left;
+}
+.light{
+  background-image: url(../assets/light-sky.jpg);
+  background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: #213547;
+}
+.dark{
+  background-image: url(../assets/dark-sky.jpeg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      color: bisque;
 }

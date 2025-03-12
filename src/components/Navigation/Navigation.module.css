@@ -4,9 +4,17 @@
     justify-content: center;
     gap: 15px;
 }
-.link {
-    color: black;
+.link.dark {
+    color: orange;
 }
 .active {
-    color: orange;
+    text-decoration: underline;
+}
+.toggleThemeBtn{
+        font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+    .toggleThemeBtn {
+            font-size: 16px;
+        }
 }

@@ -13,17 +13,23 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import { themeToggleReducer } from './theme/slice';
 const authPersistConfig = {
   key: 'auth',
   storage,
   whitelist: ['token'],
 };
-
+const themePersistConfig = {
+  key: 'themeToggle',
+  storage,
+  whitelist: ['theme'],
+};
 export const store = configureStore({
   reducer: {
     contacts: contactsReducer,
     filters: filtersReducer,
     auth: persistReducer(authPersistConfig, authReducers),
+    themeToggle: persistReducer(themePersistConfig, themeToggleReducer),
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

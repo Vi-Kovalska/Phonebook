@@ -1,6 +1,7 @@
-.link{
-    color: black;
-}
-.active{
+.link.dark {
     color: orange;
+}
+
+.active {
+    text-decoration: underline;
 }

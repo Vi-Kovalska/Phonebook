@@ -5,9 +5,10 @@
     gap: 15px;
     width: auto;
 }
-.link {
-    color: black;
-}
-.active {
+.link.dark {
     color: orange;
+}
+
+.active {
+    text-decoration: underline;
 }

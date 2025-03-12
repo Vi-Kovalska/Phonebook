@@ -8,6 +8,8 @@ import { refreshUser } from '../redux/auth/operations'
 import Layout from './Layout/Layout'
 import PrivateRoute from './PrivateRoute'
 import RestricredRoute from './RestricredRoute'
+import clsx from 'clsx'
+import { selectTheme } from '../redux/theme/selectors'
 const HomePage = lazy(() => import ('../pages/HomePage/HomePage'));
 const RegistrationPage = lazy(() => import('../pages/RegistrationPage/RegistrationPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
@@ -15,11 +17,12 @@ const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectIsRefreshing);
+  const theme = useSelector(selectTheme);
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch])
   return (
-    <>
+    <div className={clsx(theme === 'light' ? 'light' : 'dark')}>
       <Suspense fallback={<p>Loading...</p>}>
     {isRefreshing ? (<p>Refreshing...</p>) : (
     <Routes>
@@ -32,7 +35,7 @@ function App() {
     </Routes>
         )}
         </Suspense>
-      </>
+      </div>
   )
 }
 
