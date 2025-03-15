@@ -9,6 +9,7 @@
     background-position: bottom;
     background-size: cover;
     color: #213547;
+      height: 100vh;
 }
 .dark{
   background-image: url(../assets/dark-sky.jpeg);
@@ -16,4 +17,5 @@
     background-position: center;
     background-size: cover;
       color: bisque;
+      height: 100vh;
 }
