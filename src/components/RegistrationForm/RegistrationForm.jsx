@@ -21,11 +21,11 @@ const RegistrationForm = () => {
 
     const onlyLetters = /^[A-Za-zA-Яа-яЄєІіЇїҐґ-\s]+$/;
     const regularEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const regPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    // const regPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required!').min(3, 'Too Short!').max(50, 'Too Long!').matches(onlyLetters, 'The name must contain only letters!'),
         email: Yup.string().required('Email is required!').matches(regularEmail, 'Please enter a valid email!'),
-        password: Yup.string().required('Password is required!').matches(regPassword, 'Please enter a valid password!'),
+        password: Yup.string().required('Password is required!'),
     })
     const navigate = useNavigate();
     const onSubmit = (values, actions) => {
