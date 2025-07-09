@@ -9,7 +9,7 @@
     background-position: bottom;
     background-size: cover;
     color: #213547;
-      height: 100vh;
+      height: 100%;
       width: 320px;
       display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
     background-position: center;
     background-size: cover;
       color: bisque;
-      height: 100vh;
+      height: 100%;
       width: 320px;
       display: flex;
         flex-direction: column;
