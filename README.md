@@ -1,3 +1,27 @@
+Project name
+- Phonebook
+  
+Description
+- Personal contact book with user authorization and authentication which stores your contacts on a secure backend
+
+Dependencies
+- Font-end: CSS3, HTML5, React,  RTK, Postman, JWT, Axios, React-Hot-Toast
+- Back-end (see https://github.com/Vi-Kovalska/backend-Phonebook) : Node.js, Express, MongoDB, Mongoose, Cors, Pino, DotEnv, Swagger, Vercel
+
+Installed
+- Clone the repository: git clone https://github.com/Vi-Kovalska/Phonebook
+- Go to the project directory: cd project
+- Install positions: npm install
+- Usage: npm run dev
+
+Author
+- Victoria Kovalska
+
+Email: kovalskayavi853@gmail.com GitHub: @Vi-Kovalska
+
+License
+
+This project is published throughout under an MIT license. More details in the LICENSE file.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
