@@ -8,7 +8,7 @@ const RegistrationPage = () => {
   return clsx(s.link, isActive && s.active);
 };
   return (
-      <div>
+      <div className={s.pageWrapper}>
       <RegistrationForm />
       <p>You already have account? <NavLink to='/login'className={buildLinkClass}>Log in!</NavLink></p>
     </div>

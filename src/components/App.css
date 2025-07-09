@@ -10,6 +10,11 @@
     background-size: cover;
     color: #213547;
       height: 100vh;
+      width: 320px;
+      display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
 }
 .dark{
   background-image: url(../assets/dark-sky.jpeg);
@@ -18,4 +23,28 @@
     background-size: cover;
       color: bisque;
       height: 100vh;
+      width: 320px;
+      display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dark{
+    min-width: 768px;
+  }
+  .light{
+    min-width:768px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .dark {
+      min-width: 1025px;
+    }
+  
+    .light {
+      min-width: 1025px;
+    }
 }

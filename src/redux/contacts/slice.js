@@ -75,4 +75,4 @@ const slice = createSlice({
 });
 
 export const contactsReducer = slice.reducer;
-export const { stabilisationError, setIdContacts } = slice.actions;
+export const { setIdContacts } = slice.actions;
